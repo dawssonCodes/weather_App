@@ -1,0 +1,88 @@
+*{
+    box-sizing:border-box;
+}
+
+body{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    height:100vh;
+    background: url("landscape2.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.container{
+    width:100%;
+    max-width: 500px;
+    padding-left:20px;
+    line-height: 20px;
+    font-size: large;
+    background: rgba(0,0,0.6);
+    border-radius: 30px;
+    height: 300px;
+    color:white;
+    display:inline-block;
+    margin:1em;
+}
+
+.search{
+    display:flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.searchBox{
+    margin-right: 10px;
+    height:50px;
+    width:100%;
+    max-width: 300px;
+    border-radius: 20px;
+    background: rgb(48, 48, 50);
+    color:white;
+    outline:none;
+    font-size: medium;
+    
+}
+
+.search button{
+    width: 46px;
+    height: 46px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition:2s ease-in-out;
+    background: rgb(48, 48, 50);
+    color:white;
+}
+
+.search button:hover{
+    background: rgb(129, 129, 131);
+}
+
+.icon{
+    width:50px;
+}
+
+.desc{
+    display:flex;
+    margin-right:20px;
+}
+
+
+
+.loading{
+    visibility:hidden;
+    max-height: 20px;
+    position: relative;
+    margin-left: 20px;
+    line-height: 20px;
+}
+
+.loading:after{
+    visibility: visible;
+    content:"Loading...";
+    position:absolute;
+    top:0;
+    left:20px;
+}
